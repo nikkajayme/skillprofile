@@ -1,0 +1,205 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    
+    background: rgb(189, 217, 255);
+    background: linear-gradient(45deg, rgb(35, 73, 100) 0%, rgb(20, 73, 113) 35%, rgb(20, 107, 120) 100%);
+    // background: linear-gradient(239deg, rgb(49, 117, 165) 0%, rgb(31, 107, 162) 35%, rgb(13, 126, 148) 100%);
+    // background: linear-gradient(239deg, rgb(68, 148, 204) 0%, rgb(46, 136, 199) 35%, rgb(27, 151, 175) 100%);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    width: 60vw;
+    height: 85vh;
+    border-radius: 1.5rem;
+    background: rgb(238,245,255);
+    background: linear-gradient(90deg, rgba(246, 253, 255, 0.219) 0%, rgba(235, 244, 255, 0.19) 35%, rgba(207,247,255,0.3) 100%);
+    box-shadow: 0 0 3rem rgba(0,0,0,.2);
+    overflow: hidden;
+}
+
+.sidemenu {
+    color: rgb(60, 85, 111);
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(234, 250, 255, 0.7);
+    box-shadow: 0 0 .5rem rgba(61, 61, 61, 0.1);
+    width: 20vw;
+    z-index: 2;
+
+    .name {
+        font-weight: 600;
+        font-size: 17px;
+        text-shadow: 0 0 1px rgba(155, 182, 211, 0.796);
+    }
+
+    .title {
+        color: rgb(75, 104, 133);
+        font-weight: 500;
+        font-size: 13px;
+    }
+
+    .category {
+        max-width: 100%;
+        margin-top: 3rem;
+    }
+
+    .items {
+        width: 20vw;
+        list-style: none;
+        font-size: 15px;
+        padding-bottom: 2.5rem;
+
+        li {
+            border-top: 1px solid rgba(168, 186, 193, 0.7);
+            padding-top: .7rem;
+            padding-bottom: .7rem;
+            transition: background-color 250ms ease-in-out;
+
+            &:hover {
+                background-color: rgba(234, 250, 255, 0.2);
+            }
+
+            button, .button {
+                width: 15vw;
+                height: 4vh;
+                color: rgb(68, 92, 117);
+                font-family: inherit;
+                background: transparent;
+                outline: none;
+                border: 0;
+                cursor: pointer;
+            }
+
+            &:last-child {
+                border-bottom: 1px solid rgba(168, 186, 193, 0.7);
+            }
+        }
+
+    
+    }
+
+    .svg-icon {
+        width: 2.2em;
+        height: 2.2em;
+    }
+
+    .svg a {
+        color: rgb(84, 106, 130);
+        transition: color 200ms ease-in-out;
+
+        &:hover {
+            color: rgb(50, 171, 149);
+        }
+    }
+    
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    max-width: 30%;
+    margin-bottom: 1rem;
+}
+
+.mainmenu {
+    width: 40vw;
+
+    .page {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        margin: 4.5rem;
+
+        .language {
+            color: rgb(70, 82, 96);
+            border-radius: 2rem;
+            background-color: rgba(234, 250, 255, 0.6);
+            height: 9vh;
+            width: 30vw;
+            padding: 0 1.5rem 0 1.5rem;
+            box-shadow: 0 0 .5rem 0 rgba(0,0,0,.2);
+            transition: background-color 250ms ease-in-out;
+            margin-bottom: 2.5rem;
+    
+            &:hover {
+                background-color: rgba(234, 250, 255, 0.7);
+            }
+            .tech {
+                height: 4.5vh;
+    
+                h1 {
+                    padding-top: 9px;
+                    font-size: 15px;
+                }
+            }
+            span {
+                display: block;
+                height: 7px;
+                border-radius: 5px;
+                background: linear-gradient(to right, rgba(3, 147, 169, 0.8), rgba(1, 171, 117, 0.8));
+            }
+    
+            .html {
+                width: 25vw;
+            }
+    
+            .css {
+                width: 23vw;
+            }
+    
+            .js {
+                width: 15vw;
+            }
+    
+            .react {
+                width: 11vw;
+            }
+    
+            .py {
+                width: 15vw;
+            }
+    
+            .dja {
+                width: 5vw;
+            }
+
+            .vscode {
+                width: 24vw;
+            }
+
+            .ai {
+                width: 20vw;
+            }
+
+            .axd {
+                width: 13vw;
+            }
+
+            .github {
+                width: 22vw;
+            }
+    
+        }
+    }
+}
+
+
